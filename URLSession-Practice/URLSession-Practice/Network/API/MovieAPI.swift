@@ -9,9 +9,11 @@ import Foundation
 
 final class MovieAPI: BaseAPI {
     
-    static let shared = MovieAPI()
+    static let shared = MovieAPI(provider: NetworkProvider())
     
-    private override init() {}
+    private override init(provider: NetworkProvider) {
+        super.init(provider: provider)
+    }
     
     func requestLoginAPI(userKey: String, movieCode: String, 
                          completion: @escaping ((NetworkResult<Any>) -> Void)) {

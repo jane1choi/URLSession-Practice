@@ -9,7 +9,11 @@ import Foundation
 
 class BaseAPI {
     
-    let provider = NetworkProvider()
+    let provider: NetworkProvider
+    
+    init(provider: NetworkProvider) {
+        self.provider = provider
+    }
     
     func judgeStatus<T: Decodable>(by statusCode: Int, _ data: Data, _ type: T.Type) -> NetworkResult<Any> {
         let decoder = JSONDecoder()
