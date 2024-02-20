@@ -27,11 +27,13 @@ final class MovieAPI: BaseAPI {
         
         provider.request(request) { result in
             switch result {
-            case .success((let data, let response)):
-                let networkResult = self.judgeStatus(by: response.statusCode, data, MovieInformation.self)
+            case .success(let result):
+                let networkResult = self.judgeStatus(by: result.response.statusCode,
+                                                     result.data,
+                                                     MovieInformation.self)
                 completion(networkResult)
-            case .failure(let err):
-                print(err.localizedDescription)
+            case .failure(let error):
+                print(error.localizedDescription)
             }
         }
     }

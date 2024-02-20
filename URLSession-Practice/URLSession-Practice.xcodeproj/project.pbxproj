@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		777338782B8447A600143672 /* NetworkResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777338772B8447A600143672 /* NetworkResponse.swift */; };
 		779C309C2B828C7500BD15B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779C309B2B828C7500BD15B3 /* AppDelegate.swift */; };
 		779C309E2B828C7500BD15B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779C309D2B828C7500BD15B3 /* SceneDelegate.swift */; };
 		779C30A02B828C7500BD15B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 779C309F2B828C7500BD15B3 /* ViewController.swift */; };
@@ -48,6 +49,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		777338772B8447A600143672 /* NetworkResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkResponse.swift; sourceTree = "<group>"; };
 		779C30982B828C7500BD15B3 /* URLSession-Practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "URLSession-Practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		779C309B2B828C7500BD15B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		779C309D2B828C7500BD15B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -163,6 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				779C30CD2B828F9700BD15B3 /* Requestable.swift */,
+				777338772B8447A600143672 /* NetworkResponse.swift */,
 				779C30DB2B8295BB00BD15B3 /* NetworkProvider.swift */,
 				779C30D72B82938500BD15B3 /* NetworkResult.swift */,
 				779C30D92B82948700BD15B3 /* APIServiceError.swift */,
@@ -367,6 +370,7 @@
 				779C30E52B82F3F000BD15B3 /* MovieEndPoint.swift in Sources */,
 				779C30E82B82F89D00BD15B3 /* MovieAPI.swift in Sources */,
 				779C309E2B828C7500BD15B3 /* SceneDelegate.swift in Sources */,
+				777338782B8447A600143672 /* NetworkResponse.swift in Sources */,
 				779C30D42B828FDD00BD15B3 /* HttpMethod.swift in Sources */,
 				779C30FA2B83618C00BD15B3 /* BaseAPI.swift in Sources */,
 				779C30DC2B8295BB00BD15B3 /* NetworkProvider.swift in Sources */,

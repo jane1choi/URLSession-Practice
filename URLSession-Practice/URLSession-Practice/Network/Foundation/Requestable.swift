@@ -10,5 +10,5 @@ import Foundation
 protocol Requestable {
     var requestTimeOut: Float { get }
     
-    func request(_ request: URLRequest, completion: @escaping (Result<(Data, HTTPURLResponse), Error>) -> Void)
+    func request(_ request: URLRequest, completion: @escaping (Result<NetworkResponse, Error>) -> Void)
 }
