@@ -15,7 +15,7 @@ final class MovieAPI: BaseAPI {
         super.init(provider: provider)
     }
     
-    func requestLoginAPI(userKey: String, movieCode: String, 
+    func requestMovieDetailAPI(userKey: String, movieCode: String, 
                          completion: @escaping ((NetworkResult<Any>) -> Void)) {
         guard let request = try? MovieEndPoint
             .requestMovieDetailInfo(userKey: userKey, movieCode: movieCode)

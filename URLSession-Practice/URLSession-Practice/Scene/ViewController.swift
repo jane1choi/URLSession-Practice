@@ -16,7 +16,8 @@ final class ViewController: UIViewController {
     
     // Network
     private func fetchMovieDetailData(userKey: String, movieCode: String) {
-        MovieAPI.shared.requestLoginAPI(userKey: userKey, movieCode: movieCode) { networkResult in
+        MovieAPI.shared.requestMovieDetailAPI(userKey: userKey, 
+                                              movieCode: movieCode) { networkResult in
             switch networkResult {
                 
             case .success(let data):
